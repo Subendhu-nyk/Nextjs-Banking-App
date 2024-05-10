@@ -12,7 +12,8 @@ const Sidebar = ({user}:SiderbarProps) => {
     <section className='sidebar'>
         <nav className='flex flex-col gap-4'>
         <Link href='/' className='mb-12 cursor-pointer items-center gap-2 '>
-            <Image src='/icons/BankCardLogo.png' width={80} height={80} alt='logo-image' />         
+            <Image src='/icons/BankCardLogo.png' width={80} height={80} alt='logo-image' /> 
+            <h1 className="sidebar-logo">Card-EZE</h1>       
         </Link>
         {sidebarLinks?.map((item)=>{
             const isActive= pathname===item.route||pathname.startsWith(`${item.route}/`)
@@ -27,7 +28,7 @@ const Sidebar = ({user}:SiderbarProps) => {
         })}
         USER
         </nav>
-        <Form:post></Form:post>OOTER
+        FOOTER
     </section>
   )
 }
